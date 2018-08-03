@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    var arrIs = ["Wow, this text is really", "This is another text, and it is a little bit longer.Wow, this text is really very very long! I hope it can be read completely! Luckily, we are using automatic row height!", "Wow, this text is really very very long! I hope it can be read completely! Luckily, we are using automatic row height!"]
+    var arrIs = ["Wow, this text is really", "This is another text, and it is a little bit longer.Wow, this text is really very very long! I hope it can be read completely! Luckily, we are using automatic row height!", "Wow, this text is really very very long","Wow, this text is really", "This is another text, and it is a little bit longer.Wow, this text is really very very long! I hope it can be read completely! Luckily, we are using automatic row height!", "Wow, this text is really very very long","Wow, this text is really", "This is another text, and it is a little bit longer.Wow, this text is really very very long! I hope it can be read completely! Luckily, we are using automatic row height!", "Wow, this text is really very very long"]
     
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 84
+        tableView.estimatedRowHeight = 85
         
         tableView.reloadData()
     }
@@ -38,8 +38,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         let content = arrIs[indexPath.row]
         
-        cell.customLabel.text = "Title Label"
-        cell.userLabel.text = content
+        cell.lblTitle.text = "Title Label"
+        cell.lblDesp.text = content
         
         return cell
     }

@@ -9,16 +9,16 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
-    @IBOutlet weak var customLabel: UILabel!
-    @IBOutlet weak var userLabel: UILabel!
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblDesp: VerticalAlignLabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
 }
