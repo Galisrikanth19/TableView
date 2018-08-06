@@ -1,5 +1,5 @@
 //
-//  TableViewCell.swift
+//  CustomTbvCell.swift
 //  TableView
 //
 //  Created by Gali Srikanth on 01/08/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class CustomTbvCell: UITableViewCell {
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDesp: VerticalAlignLabel!

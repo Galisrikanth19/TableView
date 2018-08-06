@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1149046521184ECD00343E3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1149046221184ECD00343E3E /* LaunchScreen.storyboard */; };
+		1149046621184ECD00343E3E /* CustomTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1149046321184ECD00343E3E /* CustomTbvCell.swift */; };
+		1149046721184ECD00343E3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1149046421184ECD00343E3E /* Main.storyboard */; };
 		11BAA0A02111C69C001F875B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAA09F2111C69C001F875B /* AppDelegate.swift */; };
 		11BAA0A22111C69C001F875B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAA0A12111C69C001F875B /* ViewController.swift */; };
 		11BAA0A72111C69D001F875B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BAA0A62111C69D001F875B /* Assets.xcassets */; };
-		11BAA0AA2111C69D001F875B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BAA0A82111C69D001F875B /* LaunchScreen.storyboard */; };
-		11BAA0B22111CFD5001F875B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAA0B12111CFD5001F875B /* TableViewCell.swift */; };
-		11C37767211472BC003A9FB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C37766211472BC003A9FB0 /* Main.storyboard */; };
 		11C37769211472E7003A9FB0 /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C37768211472E7003A9FB0 /* VerticalAlignLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1149046221184ECD00343E3E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1149046321184ECD00343E3E /* CustomTbvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTbvCell.swift; sourceTree = "<group>"; };
+		1149046421184ECD00343E3E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		11BAA09C2111C69C001F875B /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BAA09F2111C69C001F875B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BAA0A12111C69C001F875B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11BAA0A62111C69D001F875B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11BAA0A92111C69D001F875B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11BAA0AB2111C69D001F875B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11BAA0B12111CFD5001F875B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		11C37766211472BC003A9FB0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		11C37768211472E7003A9FB0 /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +39,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1149045721184C8100343E3E /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				11BAA09F2111C69C001F875B /* AppDelegate.swift */,
+				1149045821184C8D00343E3E /* Model */,
+				1149046121184ECD00343E3E /* View */,
+				1149045C21184CBD00343E3E /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		1149045821184C8D00343E3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1149045C21184CBD00343E3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11BAA0A12111C69C001F875B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1149045D21184D3200343E3E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11BAA0A62111C69D001F875B /* Assets.xcassets */,
+				11BAA0AB2111C69D001F875B /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1149045E21184D5100343E3E /* SupportingClasses */ = {
+			isa = PBXGroup;
+			children = (
+				11C37768211472E7003A9FB0 /* VerticalAlignLabel.swift */,
+			);
+			path = SupportingClasses;
+			sourceTree = "<group>";
+		};
+		1149046121184ECD00343E3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1149046321184ECD00343E3E /* CustomTbvCell.swift */,
+				1149046221184ECD00343E3E /* LaunchScreen.storyboard */,
+				1149046421184ECD00343E3E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		11BAA0932111C69C001F875B = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +111,9 @@
 		11BAA09E2111C69C001F875B /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				11BAA09F2111C69C001F875B /* AppDelegate.swift */,
-				11BAA0A12111C69C001F875B /* ViewController.swift */,
-				11BAA0B12111CFD5001F875B /* TableViewCell.swift */,
-				11C37768211472E7003A9FB0 /* VerticalAlignLabel.swift */,
-				11C37766211472BC003A9FB0 /* Main.storyboard */,
-				11BAA0A62111C69D001F875B /* Assets.xcassets */,
-				11BAA0A82111C69D001F875B /* LaunchScreen.storyboard */,
-				11BAA0AB2111C69D001F875B /* Info.plist */,
+				1149045721184C8100343E3E /* MVC */,
+				1149045E21184D5100343E3E /* SupportingClasses */,
+				1149045D21184D3200343E3E /* SupportingFiles */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -128,9 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C37767211472BC003A9FB0 /* Main.storyboard in Resources */,
-				11BAA0AA2111C69D001F875B /* LaunchScreen.storyboard in Resources */,
+				1149046721184ECD00343E3E /* Main.storyboard in Resources */,
 				11BAA0A72111C69D001F875B /* Assets.xcassets in Resources */,
+				1149046521184ECD00343E3E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,24 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				11C37769211472E7003A9FB0 /* VerticalAlignLabel.swift in Sources */,
-				11BAA0B22111CFD5001F875B /* TableViewCell.swift in Sources */,
+				1149046621184ECD00343E3E /* CustomTbvCell.swift in Sources */,
 				11BAA0A22111C69C001F875B /* ViewController.swift in Sources */,
 				11BAA0A02111C69C001F875B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		11BAA0A82111C69D001F875B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11BAA0A92111C69D001F875B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		11BAA0AC2111C69D001F875B /* Debug */ = {
@@ -282,7 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FD9XT59NY8;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TableView/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +337,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FD9XT59NY8;
-				INFOPLIST_FILE = TableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TableView/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
