@@ -9,11 +9,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tbv: UITableView!
+    private var dataArr:[String] = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupTbv()
     }
-
 
 }
 
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    private func setupTbv() {
+        tbv.dataSource = self
+        tbv.delegate = self
+        tbv.backgroundColor = .clear
+        tbv.separatorColor = .clear
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let customTbvCell = tableView.dequeueReusableCell(withIdentifier: CustomTbvCell.identifier, for: indexPath) as? CustomTbvCell {
+            customTbvCell.configureCell()
+            return customTbvCell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+}

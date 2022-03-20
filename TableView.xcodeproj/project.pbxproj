@@ -13,6 +13,8 @@
 		FDD05E2D27E7461600F43906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD05E2B27E7461600F43906 /* Main.storyboard */; };
 		FDD05E2F27E7461B00F43906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD05E2E27E7461B00F43906 /* Assets.xcassets */; };
 		FDD05E3227E7461B00F43906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD05E3027E7461B00F43906 /* LaunchScreen.storyboard */; };
+		FDD05E3A27E74C5700F43906 /* CustomTbvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD05E3927E74C5700F43906 /* CustomTbvCell.swift */; };
+		FDD05E3C27E7505000F43906 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD05E3B27E7505000F43906 /* UITableViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FDD05E2E27E7461B00F43906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD05E3127E7461B00F43906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDD05E3327E7461B00F43906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD05E3927E74C5700F43906 /* CustomTbvCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTbvCell.swift; sourceTree = "<group>"; };
+		FDD05E3B27E7505000F43906 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				FDD05E2527E7461600F43906 /* AppDelegate.swift */,
 				FDD05E2727E7461600F43906 /* SceneDelegate.swift */,
 				FDD05E2927E7461600F43906 /* ViewController.swift */,
+				FDD05E3927E74C5700F43906 /* CustomTbvCell.swift */,
+				FDD05E3B27E7505000F43906 /* UITableViewCellExtension.swift */,
 				FDD05E2B27E7461600F43906 /* Main.storyboard */,
 				FDD05E2E27E7461B00F43906 /* Assets.xcassets */,
 				FDD05E3027E7461B00F43906 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD05E2A27E7461600F43906 /* ViewController.swift in Sources */,
+				FDD05E3A27E74C5700F43906 /* CustomTbvCell.swift in Sources */,
+				FDD05E3C27E7505000F43906 /* UITableViewCellExtension.swift in Sources */,
 				FDD05E2627E7461600F43906 /* AppDelegate.swift in Sources */,
 				FDD05E2827E7461600F43906 /* SceneDelegate.swift in Sources */,
 			);
