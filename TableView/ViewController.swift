@@ -10,10 +10,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tbv: UITableView!
-    private var dataArr:[String] = [String]()
+    var dataArr:[String] = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataArr = ["Srikanth", "Saanvi", "Sagarika", "RaviShekar", "Sujatha", "Bairaiah"]
         setupTbv()
     }
 
@@ -29,7 +30,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20//dataArr.count
+        return dataArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
