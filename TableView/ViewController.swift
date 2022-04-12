@@ -27,6 +27,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         tbv.delegate = self
         tbv.backgroundColor = .clear
         tbv.separatorColor = .clear
+        tbv.showsVerticalScrollIndicator = false
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
