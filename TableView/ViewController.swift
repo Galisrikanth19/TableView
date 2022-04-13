@@ -35,11 +35,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let customTbvCell = tableView.dequeueReusableCell(withIdentifier: CustomTbvCell.identifier, for: indexPath) as? CustomTbvCell {
-            customTbvCell.configureCell()
-            return customTbvCell
-        }
-        return UITableViewCell()
+        let customTbvCell = tableView.dequeueReusableCell(withIdentifier: CustomTbvCell.identifier, for: indexPath) as! CustomTbvCell
+        customTbvCell.configureCell()
+        return customTbvCell
     }
     
 }
