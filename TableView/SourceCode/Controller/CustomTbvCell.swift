@@ -8,7 +8,9 @@
 import UIKit
 
 class CustomTbvCell: UITableViewCell {
-
+    @IBOutlet weak var titleLbl: UILabel!
+    var userM: UserModel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -17,9 +19,14 @@ class CustomTbvCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell() {
+    func configureCell(WithUserModel userM: UserModel) {
         self.backgroundColor = .clear
         self.selectionStyle = .none
+        self.userM = userM
+        updateViewWithData()
     }
-
+    
+    private func updateViewWithData() {
+        titleLbl.text = userM?.titleStr ?? ""
+    }
 }

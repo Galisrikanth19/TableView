@@ -9,18 +9,18 @@ import Foundation
 import UIKit
 
 extension UITableView {
-    
-    func setNoDataView(WithErrorImage errImg: String = "no-data", WithErrorStr errStr: String) {
+    func setNoDataView(WithImageName imgName: String = "", WithTitleStr titleStr: String) {
         let bgView = UIView()
         bgView.frame = CGRect(x: 0, y: 0, width: (self.bounds.size.width), height: (self.bounds.size.height))
         bgView.backgroundColor = .clear
         self.backgroundView = bgView
         
         let noDataView: NoDataView = NoDataView()
-        noDataView.frame = CGRect(x: 20, y: 20, width: (bgView.frame.size.width) - 64, height: (bgView.frame.size.height) - 94)
+        noDataView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
         bgView.addSubview(noDataView)
+        noDataView.center = bgView.center
         
-        noDataView.updateViewWithData(WithErrorImage: errImg, WithErrorStr: errStr)
+        noDataView.updateViewWithData(WithImageName: imgName, WithTitleStr: titleStr)
         self.backgroundView?.isHidden = true
     }
     
@@ -35,5 +35,23 @@ extension UITableView {
             view.isHidden = true
         }
     }
+}
+
+extension UITableView {
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.sizeToFit()
+        
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
     
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .none
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D8E416B292659C700E20D04 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8E416A292659C700E20D04 /* UserModel.swift */; };
 		FDC3591328147A2A009662AA /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3591128147A2A009662AA /* NoDataView.swift */; };
 		FDC3591428147A2A009662AA /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC3591228147A2A009662AA /* NoDataView.xib */; };
 		FDC3591728147A84009662AA /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3591628147A84009662AA /* UITableViewExtension.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D8E416A292659C700E20D04 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FDC3591128147A2A009662AA /* NoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		FDC3591228147A2A009662AA /* NoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		FDC3591628147A84009662AA /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -47,12 +49,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FDC3590E2814776F009662AA /* SourceCode */ = {
+		2D8E4169292659B500E20D04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E416A292659C700E20D04 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D8E416C29265F7B00E20D04 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				FDD05E2927E7461600F43906 /* DashboardViewController.swift */,
 				FDD05E3927E74C5700F43906 /* CustomTbvCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D8E416D29265F9D00E20D04 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				FDD05E2B27E7461600F43906 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D8E416E2926609600E20D04 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FDC3591028147A2A009662AA /* NoDataView */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		FDC3590E2814776F009662AA /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				2D8E4169292659B500E20D04 /* Model */,
+				2D8E416C29265F7B00E20D04 /* Controller */,
+				2D8E416D29265F9D00E20D04 /* View */,
 			);
 			path = SourceCode;
 			sourceTree = "<group>";
@@ -105,7 +140,7 @@
 				FDD05E2527E7461600F43906 /* AppDelegate.swift */,
 				FDD05E2727E7461600F43906 /* SceneDelegate.swift */,
 				FDC3590E2814776F009662AA /* SourceCode */,
-				FDC3591028147A2A009662AA /* NoDataView */,
+				2D8E416E2926609600E20D04 /* HelperClasses */,
 				FDC3590F281477A5009662AA /* Extensions */,
 				FDC3591528147A60009662AA /* Resources */,
 				FDD05E3027E7461B00F43906 /* LaunchScreen.storyboard */,
@@ -188,6 +223,7 @@
 			files = (
 				FDD05E2A27E7461600F43906 /* DashboardViewController.swift in Sources */,
 				FDC3591328147A2A009662AA /* NoDataView.swift in Sources */,
+				2D8E416B292659C700E20D04 /* UserModel.swift in Sources */,
 				FDC3591728147A84009662AA /* UITableViewExtension.swift in Sources */,
 				FDD05E3A27E74C5700F43906 /* CustomTbvCell.swift in Sources */,
 				FDD05E3C27E7505000F43906 /* NSObjectExtension.swift in Sources */,
